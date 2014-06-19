@@ -16,9 +16,13 @@
         init : function () {
             var $button = $(this.element);
             this.addButtonToTabOrder($button);
+            this.addARIARole($button);
         },
         addButtonToTabOrder : function($button) {
             $button.attr('tabindex','0');
+        },
+        addARIARole : function($button) {
+            $button.attr('role','button');
         }
     };
 

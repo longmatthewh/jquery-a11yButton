@@ -21,4 +21,9 @@ describe('a11yButton plugin', function () {
         expect($(BUTTON_DIV_SELECTOR).attr('tabindex')).toBe('0');
     });
 
+    it('adds ARIA role to non button container', function() {
+        $(BUTTON_DIV_SELECTOR).a11yButton();
+        expect($(BUTTON_DIV_SELECTOR).attr('role')).toBe('button');
+    });
+
 });
