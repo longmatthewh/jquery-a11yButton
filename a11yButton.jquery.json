@@ -1,0 +1,30 @@
+{
+    "name": "a11yButton",
+    "title": "jQuery.a11yButton",
+    "description": "When you intend to use a button in your HTML use a button, not a div, span, or anchor. However, if you can't use this plugin.",
+    "keywords": [
+        "button",
+        "accessibility",
+        "a11y",
+        "ARIA",
+        "keyboard",
+        "navigation",
+        "WAI"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Matt Long",
+        "email": "longmatthewh@gmail.com"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/longmatthewh/jquery-a11yButton/blob/master/license.md"
+        }
+    ],
+    "bugs": "https://github.com/longmatthewh/jquery-a11yButton/issues",
+    "homepage": "http://longmatthewh.github.io/a11yButton/",
+    "dependencies": {
+        "jquery": ">=1.11"
+    }
+}
