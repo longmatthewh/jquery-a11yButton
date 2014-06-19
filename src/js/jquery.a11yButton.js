@@ -7,13 +7,18 @@
     };
 
     function Plugin( element, options ) {
+        this.element = element;
         this.options = $.extend( {}, defaults, options);
         this.init();
     }
 
     Plugin.prototype = {
         init : function () {
-
+            var $button = $(this.element);
+            this.addButtonToTabOrder($button);
+        },
+        addButtonToTabOrder : function($button) {
+            $button.attr('tabindex','0');
         }
     };
 
