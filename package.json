@@ -1,6 +1,6 @@
 {
     "name": "jquery.a11yButton",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "When you intend to use a button in your HTML use a button, not a div, span, or anchor. However, if you can't use this plugin.",
     "keywords": [
         "button",

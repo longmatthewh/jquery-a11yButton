@@ -1,6 +1,8 @@
 ;(function ( $, window, document, undefined ) {
     var PLUGIN_NAME = 'a11yButton';
     var PLUGIN_PREFIX = 'plugin_';
+    var TABINDEX_ATTR_NAME = 'tabindex';
+    var ROLE_ATTR_NAME = 'role', ARIA_BUTTON_ROLE = 'button';
 
     var defaults = {
 
@@ -19,10 +21,10 @@
             this.addARIARole($button);
         },
         addButtonToTabOrder : function($button) {
-            $button.attr('tabindex','0');
+            $button.attr(TABINDEX_ATTR_NAME,'0');
         },
         addARIARole : function($button) {
-            $button.attr('role','button');
+            $button.attr(ROLE_ATTR_NAME,ARIA_BUTTON_ROLE);
         }
     };
 
