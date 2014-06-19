@@ -1,6 +1,16 @@
 {
     "name": "jquery.a11yButton",
     "version": "1.0.0",
+    "description": "When you intend to use a button in your HTML use a button, not a div, span, or anchor. However, if you can't use this plugin.",
+    "keywords": [
+        "button",
+        "accessibility",
+        "a11y",
+        "ARIA",
+        "keyboard",
+        "navigation",
+        "WAI"
+    ],
     "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-contrib-jshint": "^0.9.2",
