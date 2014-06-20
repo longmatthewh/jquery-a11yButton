@@ -12,7 +12,7 @@
         "WAI"
     ],
     "main" : "dist/jquery.a11yButton.min.js",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "author": {
         "name": "Matt Long",
         "email": "longmatthewh@gmail.com"
