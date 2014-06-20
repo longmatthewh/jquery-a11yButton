@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             all: ['src/js/<%= pkg.name %>.js']
         },
         jasmine: {
-            src: ['src/js/lib/jquery-1.11.0.js','src/js/jquery.a11yButton.js'],
+            src: ['src/js/lib/jquery-1.11.0.js','test/js/lib/jasmine-jquery.js','src/js/jquery.a11yButton.js'],
             options: {
                 specs: 'test/js/specs/a11yButtonSpec.js'
             }
@@ -26,6 +26,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
-    grunt.registerTask('default', ['uglify', 'jshint']);
+    grunt.registerTask('default', ['uglify', 'jshint', 'jasmine']);
     grunt.registerTask('travis', ['jshint','jasmine']);
 };
