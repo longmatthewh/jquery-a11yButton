@@ -3,6 +3,8 @@
     var PLUGIN_PREFIX = 'plugin_';
     var TABINDEX_ATTR_NAME = 'tabindex';
     var ROLE_ATTR_NAME = 'role', ARIA_BUTTON_ROLE = 'button';
+    var ENTER_KEY=13;
+    var KEYDOWN_EVENT = 'keydown';
 
     var defaults = {
 
@@ -19,12 +21,24 @@
             var $button = $(this.element);
             this.addButtonToTabOrder($button);
             this.addARIARole($button);
+            this.addKeypress($button);
         },
         addButtonToTabOrder : function($button) {
             $button.attr(TABINDEX_ATTR_NAME,'0');
         },
         addARIARole : function($button) {
             $button.attr(ROLE_ATTR_NAME,ARIA_BUTTON_ROLE);
+        },
+        addKeypress : function($button) {
+            var self = this;
+            $button.on(KEYDOWN_EVENT, function(event) {
+                if (_isKey(event, ENTER_KEY)) {
+                    self.handleEnterKey($button);
+                }
+            });
+        },
+        handleEnterKey : function($button) {
+            $button.click();
         }
     };
 
