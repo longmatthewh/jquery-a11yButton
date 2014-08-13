@@ -3,7 +3,7 @@
     var PLUGIN_PREFIX = 'plugin_';
     var TABINDEX_ATTR_NAME = 'tabindex';
     var ROLE_ATTR_NAME = 'role', ARIA_BUTTON_ROLE = 'button';
-    var ENTER_KEY=13;
+    var ENTER_KEY=13, SPACE_KEY=32;
     var KEYDOWN_EVENT = 'keydown';
 
     var defaults = {
@@ -32,7 +32,7 @@
         addKeypress : function($button) {
             var self = this;
             $button.on(KEYDOWN_EVENT, function(event) {
-                if (_isKey(event, ENTER_KEY)) {
+                if (_isKey(event, ENTER_KEY) || _isKey(event, SPACE_KEY)) {
                     self.handleEnterKey($button);
                 }
             });

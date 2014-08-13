@@ -36,8 +36,19 @@ describe('a11yButton plugin', function () {
         expect(spyEvent).toHaveBeenTriggered();
     });
 
+    it('triggers click on SPACEBAR keypress', function() {
+        var spyEvent = spyOnEvent($buttonDiv, 'click');
+        $buttonDiv.a11yButton();
+        spaceKey($buttonDiv);
+        expect(spyEvent).toHaveBeenTriggered();
+    });
+
     function enterKey($obj) {
         triggerKeydown(13, $obj);
+    }
+
+    function spaceKey($obj) {
+        triggerKeydown(32, $obj);
     }
 
     function triggerKeydown(key, $obj) {
