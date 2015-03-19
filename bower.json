@@ -1,0 +1,24 @@
+{
+  "name": "jquery.a11yButton",
+  "version": "1.2.1",
+  "homepage": "http://longmatthewh.github.io/a11yButton/",
+  "authors": [
+    "longmatthewh <longmatthewh@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "dist/jquery.a11yButton.min.js",
+  "keywords": [
+    "jQuery",
+    "a11y",
+    "button",
+    "plugin",
+    "accessibility"
+  ]
+}
